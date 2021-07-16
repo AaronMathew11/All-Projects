@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">task1_ISA</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign up</string>
+    <string name="new_here">New Here?</string>
+    <string name="world_of">-World of learning-</string>
+    <string name="enter_the">Enter the</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="make_your">Make Your</string>
+    <string name="way_in">Way in....</string>
+    <string name="enter_your_e_mail">Enter your E-mail</string>
+    <string name="enter_your_password">Enter your Password</string>
+    <string name="renter_the_password">Renter the Password</string>
+    <string name="signup">Sign Up</string>
+    <string name="youre_almost_there">Youre almost there....</string>
+    <string name="done">Done</string>
+    <string name="contact_info">Contact info</string>
+    <string name="college">College</string>
+    <string name="branch">Branch</string>
+</resources>
