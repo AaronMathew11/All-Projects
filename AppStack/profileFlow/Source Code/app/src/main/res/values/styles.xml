@@ -1,0 +1,11 @@
+<resources>
+
+    <style name="Widget.Theme.Task1_ISA.ActionBar.Fullscreen" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <style name="Splashscreentheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+</resources>

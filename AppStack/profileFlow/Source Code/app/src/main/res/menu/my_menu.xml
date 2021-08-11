@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:title="@string/home"
+        android:icon="@drawable/home_1"/>
+    <item
+        android:id="@+id/renewFragment"
+        android:title="@string/renew"
+        android:icon="@drawable/renew_1"/>
+    <item
+        android:id="@+id/addFragment"
+        android:title="@string/add"
+        android:icon="@drawable/plus_1"/>
+    <item
+        android:id="@+id/infoFragment"
+        android:title="@string/info"
+        android:icon="@drawable/open_book_1"/>
+    <item
+        android:id="@+id/profileFragment"
+        android:title="@string/profile"
+        android:icon="@drawable/user_1"/>
+</menu>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/lukas_blazek_ewdvhnnfumq_unsplash2"
+    tools:context=".quizquestion">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/tv_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:textColor="#363A43"
+            android:text="This is the question"
+            />
+        <ImageView
+            android:id="@+id/tv_image"
+            android:layout_width="400dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/unnamed"
+            />
+        <LinearLayout
+            android:id="@+id/progress_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:max="10"
+                android:minHeight="50dp"
+                android:progress="0"
+                android:indeterminate="false"
+                style="?android:attr/progressBarStyleHorizontal"/>
+            <TextView
+                android:id="@+id/tv_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:textColor="#212121"
+                android:text="0/10"
+                />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_optionone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:background="@drawable/optionborder"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:text="option 1"/>
+        <TextView
+            android:id="@+id/tv_optiontwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:background="@drawable/optionborder"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:text="option 2"/>
+        <TextView
+            android:id="@+id/tv_optionthree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:background="@drawable/optionborder"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:text="option 3"/>
+        <TextView
+            android:id="@+id/tv_optionfour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:background="@drawable/optionborder"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:text="option 4"/>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/white"
+            android:text="Submit"
+            android:textSize="20sp"
+            android:textColor="#212121"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            />
+
+
+
+    </LinearLayout>
+</ScrollView>
