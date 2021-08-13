@@ -7,24 +7,47 @@
     android:orientation="vertical"
     android:background="@color/white"
     android:padding="10dp"
-    tools:context=".MainActivity">
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="0dp"
-    android:text="Notes on the go...."
-    android:layout_weight="0.05"
-    android:textColor="#212121"
-    android:layout_gravity="center_horizontal"
-    android:textSize="20dp"
-    android:layout_marginBottom="10dp"
-    android:fontFamily="@font/architects_daughter"
-    android:layout_marginTop="20dp"/>
+    tools:context=".savednote">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/namehere"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Notes on the go...."
+            android:layout_weight="0.8"
+            android:textColor="#212121"
+            android:layout_marginLeft="70dp"
+            android:textSize="20dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/architects_daughter"
+            android:layout_marginTop="20dp"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:text="Save"
+            android:id="@+id/btnuploadsavednote"
+            android:textAllCaps="false"
+            android:layout_marginLeft="50dp"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"/>
+
+
+    </LinearLayout>
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.8"
-        android:id="@+id/recyclerview"
+        android:id="@+id/recyclerviewsavednote"
         />
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -32,6 +55,7 @@
         android:elevation="0dp"
         android:backgroundTint="@color/white"
         >
+        <!--
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -66,7 +90,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/btnadd"
+                android:id="@+id/btnaddsavednote"
                 android:layout_width="wrap_content"
                 android:src="@drawable/ic_baseline_add_24"
                 android:elevation="3dp"
@@ -78,7 +102,7 @@
                 android:text="Button" />
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/btndelete"
+                android:id="@+id/btndeletesavednote"
                 android:src="@drawable/ic_baseline_delete_24"
                 android:layout_width="wrap_content"
                 app:fabSize="normal"
@@ -90,7 +114,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:text="Button" />
-        </LinearLayout>
+        </LinearLayout> -->
     </androidx.cardview.widget.CardView>
 
 </LinearLayout>

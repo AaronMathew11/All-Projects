@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Emoji_status">
-
+        <activity android:name=".savednote"></activity>
         <activity android:name=".bufferactivitu" />
         <activity
             android:name=".Login_Acitivity"

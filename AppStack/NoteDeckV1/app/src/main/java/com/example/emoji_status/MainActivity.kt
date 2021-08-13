@@ -13,17 +13,23 @@ import android.view.Menu
 import android.view.MenuItem
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.tabs.TabLayout
+import com.google.firebase.Timestamp
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.ktx.auth
+import com.google.firebase.firestore.FieldValue
+import com.google.firebase.firestore.auth.User
+import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.item.*
 
 class MainActivity : AppCompatActivity() {
-
     private lateinit var todoadapter: todoadapter
     lateinit var  mp: MediaPlayer
     lateinit var  dp: MediaPlayer
+    val db = Firebase.firestore
+    val user = Firebase.auth.currentUser
 
     private lateinit var auth: FirebaseAuth
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -38,19 +44,29 @@ class MainActivity : AppCompatActivity() {
 
         btnadd.setOnClickListener {
             val note= edit.text.toString()
+            val time=FieldValue.serverTimestamp()
+            val upload=fire(note,time)
+
             if(note.isNotEmpty())
             {
-                val todo = todo(note)
-                todoadapter.addtodo(todo)
+                val final = todo(note)
+                db.collection("${user?.email}").add(upload)
+                todoadapter.addtodo(final)
                 edit.text?.clear()
             }
-
             mp.start()
         }
-
         btndelete.setOnClickListener {
             todoadapter.deletetodo()
             dp.start()
+        }
+
+        btnupload.setOnClickListener {
+
+            val savedintent=Intent(this,savednote::class.java)
+            savedintent.flags= Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+            startActivity(savedintent)
+            finish()
         }
 
     }

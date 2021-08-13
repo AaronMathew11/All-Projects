@@ -1,22 +1,31 @@
 package com.example.emoji_status
 
+import android.content.ContentValues
 import android.graphics.Paint.STRIKE_THRU_TEXT_FLAG
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.item.view.*
 import java.util.zip.Inflater
 
 class todoadapter (private val todos:MutableList<todo>):RecyclerView.Adapter<todoadapter.TodoViewHolder>()
 {
+
     class TodoViewHolder(itemview:View):RecyclerView.ViewHolder(itemview)
+
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TodoViewHolder {
         return TodoViewHolder(
             LayoutInflater.from(parent.context).inflate(R.layout.item,parent,false)
+
         )
+
     }
 
     fun addtodo(note: todo){
@@ -25,6 +34,7 @@ class todoadapter (private val todos:MutableList<todo>):RecyclerView.Adapter<tod
     }
 
     fun deletetodo(){
+
         todos.removeAll { todo->
             todo.checked
         }
