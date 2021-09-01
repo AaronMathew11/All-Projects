@@ -1,0 +1,63 @@
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <shortcut
+        android:icon = "@drawable/paper_logo"
+        android:shortcutId = "cat1"
+        android:shortcutLongLabel = "@string/cat1"
+        android:shortcutShortLabel = "@string/cat1">
+
+        <intent
+            android:action = "android.intent.action.CAT1"
+            android:targetClass = "com.adgvit.papervit.Exam"
+            android:targetPackage = "com.adgvit.papervit"/>
+
+        <categories android:name="android.shortcut.conversation"/>
+
+    </shortcut>
+
+    <shortcut
+        android:icon = "@drawable/paper_logo"
+        android:shortcutId = "cat2"
+        android:shortcutLongLabel = "@string/cat2"
+        android:shortcutShortLabel = "@string/cat2">
+
+        <intent
+            android:action = "android.intent.action.CAT2"
+            android:targetClass = "com.adgvit.papervit.Exam"
+            android:targetPackage = "com.adgvit.papervit"/>
+
+        <categories android:name="android.shortcut.conversation"/>
+
+    </shortcut>
+
+    <shortcut
+        android:icon = "@drawable/paper_logo"
+        android:shortcutId = "fat"
+        android:shortcutLongLabel = "@string/fat"
+        android:shortcutShortLabel = "@string/fat">
+
+        <intent
+            android:action = "android.intent.action.FAT"
+            android:targetClass = "com.adgvit.papervit.Exam"
+            android:targetPackage = "com.adgvit.papervit"/>
+
+        <categories android:name="android.shortcut.conversation"/>
+
+    </shortcut>
+
+    <shortcut
+        android:icon = "@drawable/add_button"
+        android:shortcutId = "upload"
+        android:shortcutLongLabel = "@string/upload"
+        android:shortcutShortLabel = "@string/upload">
+
+        <intent
+            android:action = "android.intent.action.UPLOAD"
+            android:targetClass = "com.adgvit.papervit.Upload"
+            android:targetPackage = "com.adgvit.papervit"/>
+
+        <categories android:name="android.shortcut.conversation"/>
+
+    </shortcut>
+
+</shortcuts>

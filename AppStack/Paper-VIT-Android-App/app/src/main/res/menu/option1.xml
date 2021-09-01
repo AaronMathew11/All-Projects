@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/filterSubject"
+        android:title="Course Name"
+        />
+    <item
+        android:id="@+id/filterShort"
+        android:title="Course Short Name"
+        />
+    <item
+        android:id="@+id/filterCode"
+        android:title="Course Code"
+        />
+</menu>

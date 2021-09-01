@@ -1,0 +1,69 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "com.adgvit.papervit"
+        minSdkVersion 16
+        targetSdkVersion 30
+        versionCode 3
+        versionName "1.0.2"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.3.0'
+    implementation 'org.apache.commons:commons-io:1.3.2'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    testImplementation 'junit:junit:4.13.2'
+
+    //Keyboard
+    implementation 'net.yslibrary.keyboardvisibilityevent:keyboardvisibilityevent:2.1.0'
+
+    //Animatoo
+    implementation 'com.github.mohammadatif:Animatoo:master'
+
+    //Material.io
+    implementation 'com.google.android.material:material:1.3.0'
+
+    //Shimmer
+    implementation 'com.facebook.shimmer:shimmer:0.4.0'
+
+    //Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.5.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.8.0'
+    implementation 'com.karumi:dexter:5.0.0'
+
+    compile group: 'org.apache.commons', name: 'commons-io', version: '1.3.2'
+
+    //PDFViewer
+    implementation 'com.github.barteksc:android-pdf-viewer:3.2.0-beta.1'
+    implementation 'es.voghdev.pdfviewpager:library:1.1.0'
+
+    //Mail
+    implementation files('libs/activation.jar')
+    implementation files('libs/additionnal.jar')
+    implementation files('libs/mail.jar')
+
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+
+    //CircularProgressBar
+    implementation 'com.mikhaellopez:circularprogressbar:3.0.3'
+}

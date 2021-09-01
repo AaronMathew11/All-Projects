@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    tools:context="">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="9dp"
+            app:srcCompat="@drawable/ic_back"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Back"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="-14dp"
+            android:textColor=" #5F2EEA"
+            android:textSize="16sp"
+            style="?android:attr/borderlessButtonStyle"
+            android:textAllCaps="false"
+            />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload Paper"
+        android:fontFamily="@font/semibold"
+        android:textSize="30sp"
+        android:textColor="@color/textColorLight"
+        android:layout_marginLeft="16dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/upload"
+        android:layout_marginTop="58dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/semibold"
+        android:text="@string/select"
+        android:layout_marginTop="29dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/purpledifference"
+        android:textSize="16sp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/semibold"
+        android:text="@string/upload_pdf"
+        android:layout_marginTop="60dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/textColorLight"
+        android:textSize="16sp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Make Sure your Scanned Papers are of the \nHighest Quality"
+        android:layout_marginTop="27dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/textColorLight"
+        android:textSize="14sp"
+        />
+
+</LinearLayout>

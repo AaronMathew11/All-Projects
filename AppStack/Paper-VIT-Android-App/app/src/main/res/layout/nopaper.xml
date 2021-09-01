@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sf_pro_display_bold"
+        android:text="@string/title"
+        android:textAlignment="center"
+        android:textColor="@color/cardColor"
+        android:textSize="18dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/sf_pro_text_regular"
+        android:text="No papers found for this course. Help us grow our resources by contributing papers under Upload section."
+        android:textAlignment="center"
+        android:textColor="@color/cardColor"
+        android:textSize="14dp" />
+
+    <Button
+        android:id="@+id/homeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/alert_button"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp"
+        android:text="@string/home"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="14dp" />
+
+</LinearLayout>

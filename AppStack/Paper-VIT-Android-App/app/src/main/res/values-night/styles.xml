@@ -1,0 +1,22 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/backgroundLight</item>
+        <item name="colorPrimaryDark">@color/textColorLight</item>
+        <item name="colorAccent">@color/course_bg</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="buttonTint">@color/buttons_blue</item>
+        <item name="android:navigationBarColor">@color/black</item>
+        <item name="android:colorEdgeEffect">@color/colorAccent</item>
+    </style>
+
+    <style name="ButtonTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+
+        <item name="android:textColor">@color/white</item>
+        <item name="android:navigationBarColor">@color/black</item>
+        <item name="android:colorEdgeEffect">@color/colorAccent</item>
+    </style>
+
+</resources>

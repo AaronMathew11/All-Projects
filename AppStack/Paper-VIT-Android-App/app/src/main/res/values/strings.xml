@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">PaperVIT</string>
+
+    <string name="na">null</string>
+
+    //Splash Screen
+    <string name="paper">Exams</string>
+    <string name="by">BY ADG VIT</string>
+    <string name="splashMessage">We have some questions for you.</string>
+
+    //Main Activity
+    <string name="full1">Continues Assessment Test 1</string>
+    <string name="cat2">CAT 2</string>
+    <string name="full2">Continues Assessment Test 2</string>
+    <string name="fat">FAT</string>
+    <string name="fullF">Final Assessment Test</string>
+    <string name="viewProf">VIEW PROFILE</string>
+    <string name="btmMsg">Take your pick.</string>
+
+
+    //Exam
+    <string name="cat1">CAT 1</string>
+    <string name="chooseSubject">Choose a Subject to View it’s Papers</string>
+    <string name="search">Search by Course Name</string>
+    <string name="fav">Favourites</string>
+    <string name="allSub">All Subjects</string>
+    <string name="chooseYourSubject">Choose your Course.</string>
+    <string name="subjects">Subjects</string>
+
+    //Exam 1
+    <string name="subShort">SIN</string>
+    <string name="subName">Social Information Network</string>
+    <string name="subCode">CSE 3001</string>
+    <string name="subSlot">A1</string>
+    <string name="semYear">FS2017 -18</string>
+    <string name="btmMsg1">Get those marks.</string>
+
+    <string name="textpreview">Choose a Paper to Preview and Download</string>
+
+    //Exam 2
+    <string name="btmMsg2">Get\'em all.</string>
+    <string name="btnText">Download PDF</string>
+    <string name="download">Downloading...</string>
+    <string name="view">View PDF</string>
+
+    //Profile
+    <string name="profile">Profile</string>
+    <string name="message">It\'s all you</string>
+    <string name="edit">Edit</string>
+    <string name="name">ISHAAN OHRI</string>
+    <string name="regNo">18BCE0265</string>
+    <string name="message1">VIEW UPLOADED PAPERS</string>
+    <string name="message2">CHANGE PASSWORD</string>
+    <string name="message3">ADD A PAPER</string>
+    <string name="logout">LOGOUT</string>
+    <string name="aboutUs">UPLOAD A PAPER</string>
+
+    //Upload
+    <string name="upload">Upload</string>
+    <string name="uploadMessage">Thank you for your contribution</string>
+    <string name="uploadMessage2">Help out a friend.</string>
+    <string name="add">ADD A FILE</string>
+    <string name="submit">SUBMIT</string>
+    <string name="cancel">CANCEL</string>
+    <string name="preview">PREVIEW</string>
+
+    //Upload_paper_1
+    <string name="upload_pdf">Upload your scanned paper as a PDF</string>
+    <string name="quality">Make sure your Scanned Papers are of the \nHighest Quality</string>
+    <string name="select"><u>Select a file to Upload</u></string>
+
+    //About Us
+    <string name="team">Team</string>
+    <string name="ishaan">ISHAAN OHRI</string>
+    <string name="akshit">AKSHIT SADANA</string>
+    <string name="android">Android Developer</string>
+    <string name="aboutUsMessage">Feel free to reach us out</string>
+    <string name="privacy">PRIVACY POLICY</string>
+
+    //Alert
+    <string name="title">Oh shucks!</string>
+    <string name="alertMessage">Slow or no internet connection\nPlease check your internet connection</string>
+    <string name="home">OK</string>
+    <string name="title_activity_settings">Settings</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+
+    <string name="textRefer">With PaperVIT by your side, ab <b>back</b> nhi lagegi!!
+Discover frequently asked questions, question paper pattern and model questions through old question papers available on PaperVIT.
+        Jab <b>6 hazar</b> ki ho baat, to yeh bhi try karlo yaar.</string>
+
+</resources>

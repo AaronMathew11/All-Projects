@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#232A45</color>
+    <color name="colorAccent">#232A45</color>
+    <color name="disableColor">#2D2F36</color>
+    <color name="white">#FFFFFF</color>
+    <color name="searchIcon">#DBDBDB</color>
+    <color name="cardColor">#161A2B</color>
+    <color name="edit">#DB8000</color>
+    <color name="grey">#dddddd</color>
+    <color name="black">#000000</color>
+
+    //Updated colors to be used in the light mode
+
+    <color name="backgroundLight">#F7F7FC</color>
+    <color name="course_bg">#FFFFFF</color>
+    <color name="buttons_blue">#5F2EEA</color>
+    <color name="course_code_background">#E4DAFF</color>
+    <color name="download_button">#410FCE</color>
+
+    <color name="textColorLight">@color/black</color>
+
+    <color name="settingSubHeadingColor">#7A797C</color>
+
+    <color name="svg_fill">@color/black</color>
+
+    <color name="examSubheadings">#4F556B</color>
+
+    <color name="fav_button_color">#4F556B</color>
+
+    <color name="paperColor">#232A46</color>
+
+    <color name="purpledifference">#410FCE</color>
+
+
+
+
+
+
+
+</resources>
