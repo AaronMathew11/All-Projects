@@ -1,0 +1,12 @@
+The UI for a machine learning website
+
+The User friendly Website enables you to :
+  1.browse through various datamodels
+  2.download required data sets and models
+  3.Upload datamodels
+  4.Supports plit,Hot encode and many other edit options 
+  5.Suggests Udemy courses, Youtube tutorials etc for handling advice on the datamodel you are interested in.
+  6.Shows you the popular and most downloaded data models.
+  7.Rich user profile with linked github,twitter and linkedin accounts.
+  
+Figma link: https://www.figma.com/file/2d6qOC1WaIqPA2wkGlKGQ9/Machine_Learning_Website_UI?node-id=0%3A1
