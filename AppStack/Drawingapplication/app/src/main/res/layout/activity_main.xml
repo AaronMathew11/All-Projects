@@ -1,18 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/toolbar"
+        android:padding="5dp"
+        android:orientation="horizontal">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <ImageButton
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center_vertical"
+            android:onClick="redclicked"
+            android:background="@drawable/redcolor"/>
+
+        <ImageButton
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="center_vertical"
+            android:onClick="blueclicked"
+            android:background="@drawable/bluecolor"/>
+
+        <ImageButton
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="center_vertical"
+            android:onClick="greenclicked"
+            android:background="@drawable/greencolor"/>
+
+        <ImageButton
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="center_vertical"
+            android:onClick="yellowclicked"
+            android:background="@drawable/yellowcolor"/>
+
+        <ImageButton
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="center_vertical"
+            android:onClick="whiteclicked"
+            android:background="@drawable/whitecolor"/>
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_delete_24"
+            android:layout_marginLeft="30dp"
+            android:onClick="delete"
+            style="?android:attr/borderlessButtonStyle"
+            />
+
+
+
+
+    </LinearLayout>
+
+    <com.example.drawingapplication.DrawingView
+            android:id="@+id/drawing_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+
+
+</LinearLayout>
