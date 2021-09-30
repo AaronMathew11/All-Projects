@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home"
+        />
+    <item
+        android:id="@+id/code"
+        android:icon="@drawable/ic_baseline_code_24"
+        android:title="Code"
+        />
+    <item
+        android:id="@+id/scheduling"
+        android:icon="@drawable/ic_baseline_access_time_24"
+        android:title="Scheduling"
+        />
+    <item
+        android:id="@+id/about"
+        android:icon="@drawable/ic_baseline_info_24"
+        android:title="About"
+        />
+</menu>

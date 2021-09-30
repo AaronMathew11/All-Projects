@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.Process_scheduling_info">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:background="@drawable/ps"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Process Scheduling"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            android:layout_marginTop="25sp"/>
+
+        <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="15sp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#222831"
+            android:textSize="15sp"
+            android:padding="25sp"
+
+            android:text="Process scheduling is the activity of the \nprocess manager that handles the removal \nof the running process from the CPU and the \nselection of another process on the basis of \na particular strategy. \n\nProcess scheduling is an essential part of a \nMultiprogramming operating systems. Such \noperating systems allow more than one \nprocess to be loaded into the executable \nmemory at a time and the loaded process \nshares the CPU using time multiplexing."
+            />
+    </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            app:cardBackgroundColor="#222831"
+            app:cardElevation="15sp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="20sp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="20sp"
+                android:text="Categories:"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:padding="25sp"
+                android:layout_marginTop="40sp"
+                android:text="1. Non-preemptive: In non-preemptive, the resource can’t be taken from a process until the process completes execution. The switching of resources occurs when the running process terminates and moves to a waiting state.
+
+\n\n2. Preemptive: In preemptive scheduling, the OS allocates the resources to a process for a fixed amount of time. During resource allocation, the process switches from running state to ready state or from waiting state to ready state. "     />
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="40sp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_gravity="left"
+                android:layout_weight="0.4"
+                android:layout_height="150sp"
+                android:src="@drawable/ic_baseline_access_time_24"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="0.6"
+                android:layout_height="wrap_content"
+                android:text="Click me to learn more"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                android:layout_gravity="center_vertical"
+                android:onClick="ps_learnmore"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="60sp"
+            android:background="#222831">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:textSize="25sp"
+                android:text="Basic terminology"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="Burst time"
+                android:textSize="20sp"
+                android:layout_marginTop="35sp"
+                android:layout_marginLeft="20sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Every process in a computer system requires some amount of time for its execution. This time is both the CPU time and the I/O time. The CPU time is the time taken by CPU to execute the process. While the I/O time is the time taken by the process to perform some I/O operation. In general, we ignore the I/O time and we consider only the CPU time for a process. So, Burst time is the total time taken by the process for its execution on the CPU."
+                android:textColor="@color/white"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="15sp"
+                android:textSize="15sp"
+                android:layout_marginRight="20sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="Arrival time"
+                android:textSize="20sp"
+                android:layout_marginTop="35sp"
+                android:layout_marginLeft="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Arrival time is the time when a process enters into the ready state and is ready for its execution."
+                android:textColor="@color/white"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="15sp"
+                android:textSize="15sp"
+                android:layout_marginRight="20sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="Exit time"
+                android:textSize="20sp"
+                android:layout_marginTop="35sp"
+                android:layout_marginLeft="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Exit time is the time when a process completes its execution and exit from the system."
+                android:textColor="@color/white"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="15sp"
+                android:textSize="15sp"
+                android:layout_marginRight="20sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="Response time"
+                android:textSize="20sp"
+                android:layout_marginTop="35sp"
+                android:layout_marginLeft="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Response time is the time spent when the process is in the ready state and gets the CPU for the first time."
+                android:textColor="@color/white"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="15sp"
+                android:textSize="15sp"
+                android:layout_marginRight="20sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="Waiting time"
+                android:textSize="20sp"
+                android:layout_marginTop="35sp"
+                android:layout_marginLeft="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Waiting time is the total time spent by the process in the ready state waiting for CPU.  "
+                android:textColor="@color/white"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="15sp"
+                android:textSize="15sp"
+                android:layout_marginRight="20sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="Turnaround time"
+                android:textSize="20sp"
+                android:layout_marginTop="35sp"
+                android:layout_marginLeft="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Turnaround time is the total amount of time spent by the process from coming in the ready state for the first time to its completion."
+                android:textColor="@color/white"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="15sp"
+                android:textSize="15sp"
+                android:layout_marginRight="20sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="Throughput"
+                android:textSize="20sp"
+                android:layout_marginTop="35sp"
+                android:layout_marginLeft="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Throughput is a way to find the efficiency of a CPU. It can be defined as the number of processes executed by the CPU in a given amount of time. "
+                android:textColor="@color/white"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="15sp"
+                android:textSize="15sp"
+                android:layout_marginRight="20sp"
+                android:layout_marginBottom="70dp"
+                />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    </ScrollView>
+
+</FrameLayout>

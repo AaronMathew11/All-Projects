@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/home"
+    tools:context=".fragments.Home_fragment">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ >
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="vertical"
+     >
+
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:fontFamily="casual"
+   android:text="osmos"
+      android:layout_marginLeft="10sp"
+   android:textColor="#222831"
+   android:textSize="24dp"
+   android:layout_marginTop="35sp"
+/>
+
+  <ImageView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginTop="20dp"
+      android:src="@drawable/os" />
+
+  <androidx.cardview.widget.CardView
+      android:layout_width="330dp"
+      android:layout_marginTop="20dp"
+      android:layout_height="match_parent"
+      android:elevation="30dp"
+      android:layout_marginLeft="5dp"
+      android:padding="15dp"
+      app:cardBackgroundColor="@color/white"
+
+   >
+   <TextView
+       android:layout_width="wrap_content"
+    android:textColor="#222831"
+    android:layout_marginLeft="20dp"
+    android:padding="15dp"
+
+       android:layout_height="wrap_content"
+       android:textSize="14sp"
+      android:text="An operating system acts as an \nintermediary between the user of a \ncomputer and computer hardware. The \npurpose of an operating system is to \nprovide an environment in which a user \ncan execute programs conveniently and \nefficiently.
+
+"/>
+  </androidx.cardview.widget.CardView>
+
+
+  <androidx.cardview.widget.CardView
+      android:layout_width="320dp"
+      android:layout_marginTop="20dp"
+      android:layout_height="match_parent"
+      android:elevation="30dp"
+      android:layout_marginRight="5dp"
+      android:layout_gravity="right"
+      app:cardBackgroundColor="@color/white"
+      android:padding="15dp"
+      android:background="@color/white"
+      >
+   <TextView
+       android:layout_width="wrap_content"
+       android:textColor="#222831"
+       android:layout_marginLeft="30dp"
+       android:padding="15dp"
+       android:layout_height="wrap_content"
+       android:textSize="14sp"
+       android:text="
+An operating system is a software that \nmanages computer hardware. The \nhardware must provide appropriate \nmechanisms to ensure the correct \noperation of the computer system and to \nprevent user programs from interfering \nwith the proper operation of the system.
+"/>
+  </androidx.cardview.widget.CardView>
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+   android:text="Major functions"
+   android:textSize="20sp"
+      android:textColor="#222831"
+   android:fontFamily="casual"
+   android:layout_marginTop="30sp"
+   android:layout_marginLeft="10sp"/>
+
+  <androidx.cardview.widget.CardView
+      android:onClick="process_scheduling_clicked"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:cardCornerRadius="10dp"
+      app:cardBackgroundColor="@color/white"
+      android:layout_marginTop="20sp"
+      android:layout_gravity="center_horizontal"
+   >
+   <TextView
+       android:layout_width="300sp"
+       android:layout_height="wrap_content"
+    android:text="Process Scheduling"
+    android:padding="15sp"
+    android:textSize="15sp"
+       android:gravity="center_horizontal"
+    android:textColor="#222831"/>
+
+  </androidx.cardview.widget.CardView>
+
+  <androidx.cardview.widget.CardView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:cardCornerRadius="10dp"
+      app:cardBackgroundColor="@color/white"
+      android:layout_marginTop="20sp"
+      android:layout_gravity="center_horizontal"
+      >
+   <TextView
+       android:layout_width="300sp"
+       android:layout_height="wrap_content"
+       android:text="Process Management"
+       android:padding="15sp"
+       android:textSize="15sp"
+       android:gravity="center_horizontal"
+       android:textColor="#222831"/>
+
+  </androidx.cardview.widget.CardView>
+
+  <androidx.cardview.widget.CardView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:cardCornerRadius="10dp"
+      app:cardBackgroundColor="@color/white"
+      android:layout_marginTop="20sp"
+      android:layout_gravity="center_horizontal"
+      >
+   <TextView
+       android:layout_width="300sp"
+       android:layout_height="wrap_content"
+       android:text="File Management"
+       android:padding="15sp"
+       android:textSize="15sp"
+       android:gravity="center_horizontal"
+       android:textColor="#222831"/>
+
+  </androidx.cardview.widget.CardView>
+
+  <androidx.cardview.widget.CardView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:cardCornerRadius="10dp"
+      app:cardBackgroundColor="@color/white"
+      android:layout_marginTop="20sp"
+      android:layout_gravity="center_horizontal"
+      >
+   <TextView
+       android:layout_width="300sp"
+       android:layout_height="wrap_content"
+       android:text="Memory Management"
+       android:padding="15sp"
+       android:textSize="15sp"
+       android:gravity="center_horizontal"
+       android:textColor="#222831"/>
+
+  </androidx.cardview.widget.CardView>
+
+  <androidx.cardview.widget.CardView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:cardCornerRadius="10dp"
+      app:cardBackgroundColor="@color/white"
+      android:layout_marginTop="20sp"
+      android:layout_gravity="center_horizontal"
+      >
+   <TextView
+       android:layout_width="300sp"
+       android:layout_height="wrap_content"
+       android:text="Error Detection"
+       android:padding="15sp"
+       android:textSize="15sp"
+       android:gravity="center_horizontal"
+       android:textColor="#222831"/>
+
+  </androidx.cardview.widget.CardView>
+
+  <androidx.cardview.widget.CardView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:cardCornerRadius="10dp"
+      app:cardBackgroundColor="@color/white"
+      android:layout_marginTop="20sp"
+      android:layout_gravity="center_horizontal"
+      >
+   <TextView
+       android:layout_width="300sp"
+       android:layout_height="wrap_content"
+       android:text="Device Management"
+       android:padding="15sp"
+       android:textSize="15sp"
+       android:gravity="center_horizontal"
+       android:textColor="#222831"/>
+
+  </androidx.cardview.widget.CardView>
+
+
+
+ </LinearLayout>
+</ScrollView>
+</FrameLayout>
